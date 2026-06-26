@@ -1,0 +1,27 @@
+{
+  "source": "inputs/sample.mp4",
+  "language": "zh",
+  "segments": [
+    {
+      "id": "seg_001",
+      "start": 0.0,
+      "end": 2.4,
+      "text": "今天我们先做一个自动化剪辑的最小版本。",
+      "speaker": "speaker_001",
+      "chars": [
+        { "text": "今", "start": 0.0, "end": 0.14 },
+        { "text": "天", "start": 0.14, "end": 0.28 },
+        { "text": "我", "start": 0.36, "end": 0.48 },
+        { "text": "们", "start": 0.48, "end": 0.6 }
+      ]
+    },
+    {
+      "id": "seg_002",
+      "start": 2.6,
+      "end": 5.2,
+      "text": "它会根据字幕判断哪些内容应该保留。",
+      "speaker": "speaker_001",
+      "chars": []
+    }
+  ]
+}

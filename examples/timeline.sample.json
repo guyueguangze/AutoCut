@@ -1,0 +1,31 @@
+{
+  "segments": [
+    {
+      "id": "seg_001",
+      "start": 0.0,
+      "end": 5.0,
+      "decision": "keep",
+      "text": "示例保留片段一",
+      "reason": "开场核心信息",
+      "confidence": 0.9
+    },
+    {
+      "id": "seg_002",
+      "start": 5.0,
+      "end": 8.0,
+      "decision": "delete",
+      "text": "示例删除片段",
+      "reason": "停顿或重复",
+      "confidence": 0.8
+    },
+    {
+      "id": "seg_003",
+      "start": 8.0,
+      "end": 12.0,
+      "decision": "keep",
+      "text": "示例保留片段二",
+      "reason": "继续讲核心观点",
+      "confidence": 0.86
+    }
+  ]
+}

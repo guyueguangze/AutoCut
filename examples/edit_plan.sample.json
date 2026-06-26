@@ -1,0 +1,19 @@
+{
+  "chapters": [
+    {
+      "title": "自动化剪辑 MVP 示例",
+      "start_block_id": "B0001",
+      "end_block_id": "B0001",
+      "summary": "示例章节，用来验证 edit_plan 到 timeline 的映射。"
+    }
+  ],
+  "edit_decisions": [
+    {
+      "block_id": "B0001",
+      "decision": "keep",
+      "reason": "示例中保留第一块内容。",
+      "title": "自动化剪辑 MVP 示例",
+      "confidence": 0.9
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+[project]
+name = "autocut-mvp"
+version = "0.1.0"
+description = "Chinese speech-first automatic video rough-cut MVP."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.7",
+    "rich>=13.8,<14",
+    "typer>=0.12,<0.27",
+]
+
+[project.optional-dependencies]
+asr = [
+    "funasr>=1.2",
+    "torch>=2.2",
+    "torchaudio>=2.2",
+]
+ocr = [
+    "pillow>=12.2.0",
+    "rapidocr-onnxruntime>=1.4.4",
+]
+ppocrv6 = [
+    "paddleocr>=3.7.0",
+    "paddlepaddle>=3.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+autocut = "autocut.cli:app"
+
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[[tool.uv.index]]
+name = "ustc"
+url = "https://mirrors.ustc.edu.cn/pypi/simple"
+default = true
